@@ -29,6 +29,21 @@ export const authOptions = {
               "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo0rcnkCIh4V-5JOhdPqfi9ESlZ9GadzwfSw&s",
           };
         }
+        const USER_EMAIL = "user@gmail.com";
+        const USER_PASSWORD = "user123";
+        if (email === USER_EMAIL && password === USER_PASSWORD) {
+          return {
+            id: "user-001",
+            email,
+            firstName: "User",
+            role: "user",
+            personalInfo: {
+              occupation: "User",
+            },
+            profilePic:
+              "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo0rcnkCIh4V-5JOhdPqfi9ESlZ9GadzwfSw&s",
+          };
+        }
 
         // ❌ Optional: handle real user login via API
         // const res = await fetch("https://api.xcamper.com/api/user/login", {
@@ -37,14 +52,7 @@ export const authOptions = {
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ email, password }),
         });
-        // const res = await fetch("https://api.xcamper.com/api/user/login", {
-        //   method: "POST",
-        //   headers: { "Content-Type": "application/json" },
-        //   body: JSON.stringify({
-        //     email: credentials.email,
-        //     password: credentials.password,
-        //   }),
-        // });
+     
 
         const response = await res.json();
         console.log("Auth API response:", response);

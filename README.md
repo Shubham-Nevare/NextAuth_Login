@@ -1,5 +1,4 @@
 <<<<<<< HEAD
-<<<<<<< HEAD
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
@@ -39,6 +38,3 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 =======
 # NextAuth_Login
 >>>>>>> 4e8417fd6a9d4f4a10b6b05a44d08065a9627a82
-=======
-# NextAuth_Login
->>>>>>> 13971a0537738b9ae91b4992c334b04408a67dc3
