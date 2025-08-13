@@ -50,17 +50,6 @@ export default function SuccessPage() {
             Welcome to Dashboard
           </h1>
 
-          {/* 🔽 Navigation Bar */}
-          {/* <Navbar /> */}
-
-          {/* 🔽 Logout Button */}
-          {/* <button
-            onClick={handleLogout}
-            className="mb-6 bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded"
-          >
-            Logout
-          </button> */}
-
           {/* 🔽 User Info Card */}
           <div className="bg-white p-8 rounded-2xl shadow-xl w-full max-w-md text-center space-y-6">
             <h2 className="text-2xl font-semibold text-green-700">

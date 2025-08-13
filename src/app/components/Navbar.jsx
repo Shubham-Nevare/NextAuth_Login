@@ -31,7 +31,7 @@ export default function Navbar() {
     }
   };
   return (
-    <div className="flex sticky top-0">
+    <div className="flex">
       {/* Sidebar */}
       <div
         className={`h-screen bg-green-50 text-green-700 w-64 p-6 transition-transform duration-300 
