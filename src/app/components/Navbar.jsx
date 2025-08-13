@@ -31,7 +31,7 @@ export default function Navbar() {
     }
   };
   return (
-    <div className="flex">
+    <div className="flex sticky top-0">
       {/* Sidebar */}
       <div
         className={`h-screen bg-green-50 text-green-700 w-64 p-6 transition-transform duration-300 
@@ -97,7 +97,7 @@ export default function Navbar() {
 
         <button
           onClick={handleLogout}
-          className="mt-8 bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded"
+          className="mt-8 bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded cursor-pointer"
         >
           Logout
         </button>

@@ -212,7 +212,7 @@ function user() {
         </table>
         <button
           onClick={handleAddUser}
-          className="mb-4 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700"
+          className="mb-4 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 cursor-pointer"
         >
           Add User
         </button>
