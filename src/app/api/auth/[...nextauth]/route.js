@@ -46,7 +46,6 @@ export const authOptions = {
         }
 
         // ❌ Optional: handle real user login via API
-        // const res = await fetch("https://api.xcamper.com/api/user/login", {
         const res = await fetch(`${process.env.BASE_API_URL}/api/user/login`, {
           method: "POST",
           headers: { "Content-Type": "application/json" },

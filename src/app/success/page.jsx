@@ -9,24 +9,6 @@ export default function SuccessPage() {
 
   useEffect(() => {
     if (status !== "authenticated") return;
-
-    // const handlePopState = (event) => {
-    //   // Prevent back by pushing the state again
-    //   window.history.pushState(null, "", location.href);
-    //   router.replace("/signin"); // redirect on back button press
-    // };
-
-    // // Replace current history state to avoid stacking entries
-    // window.history.replaceState(null, "", location.href);
-
-    // // Push one extra state to prevent back navigation
-    // window.history.pushState(null, "", location.href);
-
-    // window.addEventListener("popstate", handlePopState);
-
-    // return () => {
-    //   window.removeEventListener("popstate", handlePopState);
-    // };
   }, [status, router]);
 
   useEffect(() => {
@@ -36,7 +18,6 @@ export default function SuccessPage() {
     }
   }, [status, router]);
   if (!session) {
-    // return <div className="p-4 text-center">Not authorized</div>;
     return null;
   }
 
@@ -72,7 +53,7 @@ export default function SuccessPage() {
                 <strong>{session?.user?.email || "user@example.com"}</strong>
               </p>
               <p>
-                Occupation:{" "}
+                Occupation:
                 <strong>
                   {session?.user?.personalInfo?.occupation || "Unknown"}
                 </strong>
